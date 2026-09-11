@@ -1,0 +1,10 @@
+#nclude <stdio.h>
+
+int main()
+{
+	int a = 7;
+	int* ap = &a;
+	int** app = &ap;
+	printf("Single-p: a = %d", *ap);
+	printf("Double-p: a = %d", **app);
+}
