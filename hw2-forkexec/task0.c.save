@@ -1,0 +1,13 @@
+l#include <stdio.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdint.h>
+int main()
+{
+	fork();
+	fork();
+	waitid(
+	printf("Output! PID: %jd", (intmax_t) getpid());
+	printf(", PPID: %jd\n", (intmax_t) getppid());
+	return 0;
+}
