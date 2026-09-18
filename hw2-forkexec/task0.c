@@ -29,3 +29,4 @@ int main()
 	}
 }
 // yes my code repeats but its just testing ToT (crying emodji) :'(
+// by the output is is possible to follow the tree of the processes.
