@@ -28,5 +28,5 @@ int main()
 		return 0;
 	}
 }
-// yes my code repeats but its just testing ToT (crying emodji) :'(
+// my code repeats but its just testing ToT :(
 // by the output is is possible to follow the tree of the processes.

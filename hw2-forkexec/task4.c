@@ -7,11 +7,10 @@
 
 int main()
 {
-	char* args[1] = {"Chikibamboni"};
         pid_t pid = fork();
-        if (pid == 0) // if this is the SECOND child
+        if (pid == 0) // if this is the child
         {
-                execl("/bin/echo", "echo", *args, (char *)NULL);
+                execl("/bin/grep", "grep", "-n", "ar", "test.txt", (char *)NULL);
         }
         else
         {
@@ -19,5 +18,3 @@ int main()
                 printf("Parent process done\n");
         }
 }
-// I know I did not have to create an array and use pointers to pass arguments,
-// but how can I miss a chance to exercise?...
