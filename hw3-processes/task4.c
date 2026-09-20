@@ -25,7 +25,7 @@ int main() {
 		while(waitpid(pid1, &status1, 0) > 0);
 		while(waitpid(pid2, &status2, 0) > 0);
 		printf("Parent PID: %jd\n", (intmax_t) getpid());
-		printf("Child #1 PID: %jd, exit status: %jd\n", (intmax_t) pid1, (intmax_t) status1);
-		printf("Child #2 PID: %jd, exit status: %jd\n", (intmax_t) pid2, (intmax_t) status2);
+		printf("Child #1 PID: %jd, exit status: %jd (%s)\n", (intmax_t) pid1, (intmax_t) status1, (status1 == 0 ? "SUCCESS" : "ERROR"));
+		printf("Child #2 PID: %jd, exit status: %jd (%s)\n", (intmax_t) pid2, (intmax_t) status2, (status2 == 0 ? "SUCCESS" : "ERROR"));
 	}
 }
