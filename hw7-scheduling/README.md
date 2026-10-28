@@ -1,10 +1,10 @@
 # HW7-SCHEDULING 
 
-## by Yelena Mkrtchyan
+*by Yelena Mkrtchyan*
 
 The solution is contained in the pss.c file.
 
-### Instruction
+## Instruction
 
 To execute the code in the solution file, you need to:
 1. compile and link an executable:
@@ -19,6 +19,7 @@ separating them with a space (" ") and ending each line with
 5. see the results of the simulation
 
 ------------------------- **DISCLAIMER** -------------------------
+
 Upon the requirements of the assignment, the SJF algorighm
 does not realistically account for the arrival time of 
 the processes.
