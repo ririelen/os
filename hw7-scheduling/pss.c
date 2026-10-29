@@ -47,7 +47,7 @@ void sort_fcfs(struct proc *p, int start, int end) {
 	}
 };
 int ganttchart(struct proc *p, int n) {
-	printf("\n");
+	printf("\nGantt Chart: ");
 	for (int i = 0; i < n; i++) {
 		int t = p[i].burst_time-1;
 		printf("|");
